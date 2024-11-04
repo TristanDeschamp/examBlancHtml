@@ -1,0 +1,111 @@
+/* Section Formulaire de Contact */
+.contactForm {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-radius: 8px;
+	padding: 1.25rem;
+	max-width: 600px;
+	margin: 1.25rem auto;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+	color: #FF9F55;
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
+.contactForm form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contactForm label {
+	margin: 0.625rem 0 0.313rem;
+	font-weight: bold;
+	color: #333333;
+}
+
+.contactForm input,
+.contactForm textarea {
+	width: 100%;
+	padding: 0.625rem;
+	margin-bottom: 0.625rem;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	resize: none;
+}
+
+.contactForm button {
+	background-color: #FF9F55;
+	color: #FFFFFF;
+	border: none;
+	padding: 0.625rem 1.25rem;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 0.625rem;
+	transition: background-color 0.3s ease;
+}
+
+.contactForm button:hover {
+	background-color: #E68A00;
+}
+
+.contactForm button[type="reset"] {
+	background-color: #CCCCCC;
+	color: #333333;
+}
+
+.contactForm button[type="reset"]:hover {
+	background-color: #999999;
+}
+
+/* ==== Media Queries ==== */
+@media (max-width: 768px) {
+	.contactForm {
+		padding: 1rem;
+		max-width: 90%;
+	}
+
+	.contactForm h2 {
+		font-size: 1.5rem;
+	}
+
+	.contactForm label {
+		font-size: 1rem;
+	}
+
+	.contactForm input,
+	.contactForm textarea {
+		padding: 0.5rem;
+	}
+
+	.contactForm button {
+		padding: 0.5rem 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.contactForm {
+		padding: 0.75rem;
+		max-width: 100%;
+	}
+
+	.contactForm h2 {
+		font-size: 1.25rem;
+	}
+
+	.contactForm label {
+		font-size: 0.875rem;
+	}
+
+	.contactForm input,
+	.contactForm textarea {
+		padding: 0.5rem;
+	}
+
+	.contactForm button {
+		padding: 0.5rem 0.75rem;
+	}
+}

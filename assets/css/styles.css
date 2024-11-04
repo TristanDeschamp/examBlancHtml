@@ -1,0 +1,299 @@
+/* ==== Reset de la page ==== */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* ==== Style Général ==== */
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #F4F4F4;
+}
+
+h2{
+	color: #FF9F55;
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
+.experiences,
+.education,
+.competences,
+.projets{
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-radius: 8px;
+	padding: 1.25rem;
+	max-width: 800px;
+	margin: 1.25rem auto;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.educationCard,
+.projetCard{
+	background-color: #F9F9F9;
+	border: 1px solid #DDDDDD;
+	border-radius: 8px;
+	padding: 1.25rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencesCard,
+.skillCard{
+	background-color: #F9F9F9;
+	border: 1px solid #DDDDDD;
+	border-radius: 8px;
+	padding: 1.25rem;
+	width: calc(50% - 1.25rem); /* ==== Ajuste la largeur pour deux colonnes avec un espace entre deux éléments ==== */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ==== Header CSS ==== */
+header{
+	position: sticky;
+	z-index: 100;
+	top: 0;
+	background-color: #333333;
+	color: #FFFFFF;
+	padding: 1.25rem 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+header h1{
+	font-size: 2.5rem;
+	color: #FF9F55;
+}
+
+header nav ul{
+	list-style: none;
+	margin: 1.25rem 0 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+header nav ul li{
+	margin: 0 0.938rem;
+}
+
+header nav ul li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: color 0.3s ease;
+}
+
+header nav ul li a:hover{
+	color: #FF9F55;
+}
+
+/* ==== Section Expériences CSS ==== */
+.experiences h2{
+	color: #FF9F55;
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
+.experiences .experiencesContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 1.25rem;
+}
+
+.experiences .experiencesContainer .experiencesCard:hover{
+	transform: translateY(-0.313rem);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.experiences .experiencesContainer .experiencesCard p{
+	margin: 0.625rem 0;
+}
+
+.experiences .experiencesContainer .experiencesCard strong{
+	color: #333333;
+}
+
+/* ==== Section Education CSS ==== */
+.education .educationGrid{
+	display: grid;
+	/* ==== Ajoute autant de colonnes que l'élément parent le permet avec une largeur minimale de 18.75rem et au maximum 1 fraction ==== */
+	grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+	gap: 1.25rem;
+}
+
+.education .educationGrid .educationCard:hover{
+	transform: translateY(-0.313rem);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.education .educationGrid .educationCard h3{
+	color: #FF9F55;
+}
+
+.education .educationGrid .educationCard p{
+	margin: 0.625rem 0;
+}
+
+.education .educationGrid .educationCard strong{
+	color: #333333;
+}
+
+/* ==== Section Compétences CSS ===== */
+.competencesContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap: 1.25rem;
+}
+
+.skillCard:hover {
+	transform: translateY(-0.313rem);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skillCard h3 {
+	color: #FF9F55;
+}
+
+.skillCard p {
+	margin: 0.625rem 0;
+}
+
+/* Section Projets */
+.projetsGrid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 1.25rem;
+}
+
+.projetCard:hover{
+	transform: translateY(-0.313rem);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projetCard img{
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+.projetCard h3{
+	margin-top: 0.625rem;
+	color: #FF9F55;
+}
+
+.projetCard p{
+	margin: 0.625rem 0 0;
+}
+
+/* ==== Footer CSS ==== */
+footer {
+	background-color: #333333;
+	color: #FFFFFF;
+	padding: 1.25rem 0;
+	text-align: center;
+}
+
+.footerContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.footerSection {
+	margin: 0.625rem;
+	flex: 1;
+	min-width: 200px;
+}
+
+.footerSection p {
+	margin-bottom: 0.625rem;
+	color: #FF9F55;
+	margin: 0.313rem 0;
+}
+
+.footerSection a {
+	color: #FF9F55;
+	text-decoration: none;
+}
+
+.footerSection a:hover {
+	text-decoration: underline;
+}
+
+address{
+	font-style: normal;
+}
+
+/* ==== Media Queries ==== */
+@media (max-width: 1024px) {
+	header h1 {
+		font-size: 2rem;
+	}
+
+	header nav ul li a {
+		font-size: 1rem;
+	}
+
+	.experiencesCard,
+	.educationCard,
+	.skillCard,
+	.projetCard {
+		width: calc(100% - 1.25rem);
+	}
+}
+
+@media (max-width: 768px) {
+	.experiencesCard,
+	.educationCard,
+	.skillCard,
+	.projetCard {
+		width: 100%;
+	}
+	
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li {
+		margin: 0.625rem 0;
+	}
+}
+
+@media (max-width: 480px) {
+	header h1 {
+		font-size: 1.5rem;
+	}
+
+	header nav ul li a {
+		font-size: 0.875rem;
+	}
+
+	.experiences,
+	.education,
+	.competences,
+	.projets {
+		padding: 1rem;
+	}
+
+	.experiencesCard,
+	.educationCard,
+	.skillCard,
+	.projetCard {
+		padding: 1rem;
+	}
+
+	footer {
+		padding: 1rem 0;
+	}
+}

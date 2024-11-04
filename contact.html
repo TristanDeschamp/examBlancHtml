@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>La Superbe page contact... Toujours pas si ouf que ça. =<</title>
+	<!-- Lien CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/contact.css">
+</head>
+<body>
+	<!-- Header Début -->
+	<header>
+		<h1>Tristan Deschamp</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Vous redirige vers mon CV">Accueil</a></li>
+				<li><a href="contact.html" title="Vous emmène vers un formulaire pour me contacter">Contact</a></li>
+				<li><a href="https://www.iafd.com/person.rme/id=a65b0f6f-6cc0-4357-a72f-69ff20c8501c" title="Petite surprise... (Dédicace à toi Stéphane)" target="_blank">Surprise...</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Header Fin -->
+
+	<!-- Main Début -->
+	<main>
+		<!-- Formulaire Début -->
+		<section class="contactForm">
+			<h2>Envoyer les messages !</h2>
+			<form action="submit.php" enctype="multipart/form-data" method="post">
+				<label for="prenom">Prénom ici mon con :</label>
+				<input type="text" name="prenom" id="prenom" required autofocus="autofocus">
+
+				<label for="nom">Ton nom ma couille :</label>
+				<input type="text" name="nom" id="nom" required>
+
+				<label for="email">Claque ton mail cousin :</label>
+				<input type="email" name="email" id="email" required>
+
+				<label for="sujet">Pourquoi tu m'embete au juste ? :</label>
+				<input type="text" name="sujet" id="sujet" required>
+
+				<label for="message">Viens te confesser mon enfant :</label>
+				<textarea name="message" id="message" rows="5" required></textarea>
+
+				<button type="submit" name="submitContactForm">Soumet le formulaire ou sinon ...</button>
+				<button type="reset">Je veux perdre tout çe que j'ai écrit lol...</button>
+			</form>
+			<!-- Formulaire Fin -->
+		</section>
+	</main>
+	<!-- Main Fin -->
+
+	<!-- Footer Début -->
+	<footer>
+		<div class="footerContainer">
+			<div class="footerSection">
+				<address>
+					<p>Contacts</p>
+					<p>Email : <a href="mailto:kenzaEloiseSuck@gmail.com">C'est safe tkt</a></p>
+					<p>Tel : <a href="tel:0777777777">07 77 77 77 77</a></p>
+				</address>
+			</div>
+
+			<div class="footerSection">
+				<h4>Mes réseaux</h4>
+				<p><a href="https://fr.linkedin.com/" target="_blank" title="Vous renvoie sur Linkedin">Linkedin</a></p>
+				<p><a href="https://github.com/" target="_blank" title="Vous renvoie sur Github">Github</a></p>
+				<p><a href="https://www.iafd.com/person.rme/id=a65b0f6f-6cc0-4357-a72f-69ff20c8501c" target="_blank" title="Vous ammène sur un site très spécial">Un site très sérieux</a></p>
+			</div>
+
+			<div class="footerSection">
+				<h4>Crédits</h4>
+				<p>CV comique réalisé par <strong>Tristan Deschamp</strong> et <strong>Enormément de de fatigue</strong>.</p>
+				<p>&copy; 2024, Tristan Deschamp | Tout droits réservés</p>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer Fin -->
+</body>
+</html>
